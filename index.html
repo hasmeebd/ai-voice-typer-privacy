@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Voice Typer: Privacy Policy</title>
+<style>
+  :root { --bg: #ffffff; --text: #1b1c1f; --muted: #5d5f66; --line: #e2e2de; --accent: #1a62d6; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #17181b; --text: #ececea; --muted: #a2a4aa; --line: #34363c; --accent: #6ea6ff; color-scheme: dark; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+  p, li { margin: 0 0 10px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  code { font-family: Consolas, monospace; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>AI Voice Typer: Privacy Policy</h1>
+  <p class="muted">Publisher: OOFFOO Dev · Effective: 14 November 2026</p>
+
+  <p>AI Voice Typer turns your speech into text and types it into the app you are using. This page explains exactly what data the app handles. In short: <b>we (OOFFOO Dev) receive no data at all.</b> There are no accounts, no analytics, no ads and no servers of ours.</p>
+
+  <h2>1. What is sent, and to whom</h2>
+  <p>When you record, the app sends the following directly from your PC to the <b>Google Gemini API</b> (<code>generativelanguage.googleapis.com</code>), using the API key <b>you</b> provide:</p>
+  <ul>
+    <li>the audio you recorded;</li>
+    <li>your settings that shape the result: spoken languages, translation target and your custom words;</li>
+    <li>with "Type while I speak" on: up to the last 300 characters typed in the previous 20 seconds, so the next phrase continues correctly.</li>
+  </ul>
+  <p>Nothing is sent when you are not recording. Google processes this data under its own terms: the <a href="https://ai.google.dev/gemini-api/terms">Gemini API Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Under those terms, Google may use content sent with a free-of-charge API key to improve its products. If that matters to you, use a key with billing enabled, or do not dictate sensitive information.</p>
+
+  <h2>2. What stays on your PC</h2>
+  <ul>
+    <li><b>API key:</b> stored in Windows Credential Manager, never in a file and never sent anywhere except Google.</li>
+    <li><b>Settings:</b> a settings file in the app's own data folder.</li>
+    <li><b>History:</b> your dictations (text, time, mode and the window title they were typed into), up to 1,000 items, in the app's data folder. You can delete items, clear the list, or turn history off in Settings.</li>
+  </ul>
+  <p>Uninstalling the app removes its data folder. The API key can be removed in Windows Credential Manager (entry <code>gemini-api-key.ai-voice-typer</code>).</p>
+
+  <h2>3. Microphone</h2>
+  <p>The app records only while you hold the push-to-talk key or after you start a recording. If "Keep microphone ready" is on, the microphone stays open so recording starts instantly. In that state the app keeps only the last half second of audio in memory, overwriting it continuously. It is never saved or sent unless you start a recording. Windows shows its microphone icon while the microphone is open. You can turn this off in Settings.</p>
+
+  <h2>4. Keyboard</h2>
+  <p>Push-to-talk needs to know when you press and release one key (Right Alt by default). For this the app uses a Windows keyboard hook that checks each key press for that one key only. Every other key passes through untouched and is never stored, logged or sent. When you click "Change key" in Settings, the app reads only the next key you press, to set it. You can turn push-to-talk off in Settings, which removes the hook completely.</p>
+
+  <h2>5. Clipboard</h2>
+  <p>To type text, the app briefly places it on the clipboard, pastes it, and then restores your previous clipboard text. Text the app types is excluded from Windows clipboard history and cloud clipboard.</p>
+
+  <h2>6. Children</h2>
+  <p>The app is not directed at children under 13 and does not knowingly collect data from them.</p>
+
+  <h2>7. Changes and contact</h2>
+  <p>If this policy changes, the new version will be published at this address with a new effective date. Questions: <b><a href="mailto:hasmeebd@gmail.com">hasmeebd@gmail.com</a></b>.</p>
+</main>
+</body>
+</html>
